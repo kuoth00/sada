@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+
+
+html {
+    
+    font-family: sans-serif;
+  }
+
+  .hamburger {
+    padding-right: 20px;
+    cursor: pointer;
+  }
+  
+  .hamburger .line {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: #ff9776;
+  }
+/* Imagen del logo */
+.logo img {
+    height: 100px; /* Ajusta la altura de la imagen */
+    width: 140px;
+}
+
+/* Contenedor de los enlaces */
+.nav-links {
+    display: flex;
+    gap: 50px; /* Espacio entre los links */
+}
+
+/* Estilo de los enlaces */
+.nav-links a {
+    color: rgb(0, 4, 245);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f4a261; /* Cambio de color al pasar el cursor */
+}
+

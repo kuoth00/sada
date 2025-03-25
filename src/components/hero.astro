@@ -1,0 +1,84 @@
+---
+import "../styles/global.css";
+---
+<style>
+@keyframes slide {
+  from { transform: translateX(10%); } /* Inicia fuera de la pantalla */
+  to { transform: translateX(-80%); } /* Se mueve fuera del otro lado */
+}
+
+.slider {
+  display: flex;
+  gap: 2rem;
+  min-width: 300%; /* Asegura que haya espacio para todas las imágenes */
+  animation: slide 15s linear infinite; /* Hace la animación más lenta */
+}
+
+.slider img {
+  flex-shrink: 0; /* Evita que las imágenes se reduzcan */
+  width: auto;
+  height: 80px; /* Ajusta la altura según tu diseño */
+}
+</style>
+
+<section class="h-screen bg-[url(/src/images/stock/back.jpg)] bg-cover bg-center bg-no-repeat shadow-2xl">
+  <div class="w-full absolute bottom-0 mx-auto bg-white bg-no-repeat overflow-hidden">
+    <div class="slider flex space-x-10">
+      <img src="/src/images/patrocinadores/dental.jpg" class="h-30 object-cover rounded-lg" alt="Imagen 1" />
+      <img src="/src/images/patrocinadores/clm-region.jpg" class="h-30 object-cover rounded-lg" alt="Imagen 2" />
+      <img src="/src/images/patrocinadores/uclm.jpg" class="h-30 object-cover rounded-lg" alt="Imagen 3" />
+      <img src="/src/images/patrocinadores/gasoleos.jpg" class="h-30 object-cover rounded-lg" alt="Imagen 4" />
+      <img src="/src/images/patrocinadores/dipu.jpg" class="h-30 object-cover rounded-lg" alt="Imagen 5" />
+      <img src="/src/images/patrocinadores/imd.jpg" class="h-30 object-cover rounded-lg" alt="Imagen 6" />
+      <img src="/src/images/patrocinadores/Globalcaja.jpg" class="h-30 object-cover rounded-lg" alt="Imagen 7" />
+      <img src="/src/images/patrocinadores/FECLM.jpg" class="h-30 object-cover rounded-lg" alt="Imagen 8" />
+
+      <img src="/src/images/patrocinadores/dental.jpg" class="h-30 object-cover rounded-lg" alt="Imagen 1" />
+      <img src="/src/images/patrocinadores/clm-region.jpg" class="h-30 object-cover rounded-lg" alt="Imagen 2" />
+      <img src="/src/images/patrocinadores/uclm.jpg" class="h-30 object-cover rounded-lg" alt="Imagen 3" />
+      <img src="/src/images/patrocinadores/gasoleos.jpg" class="h-30 object-cover rounded-lg" alt="Imagen 4" />
+      <img src="/src/images/patrocinadores/dipu.jpg" class="h-30 object-cover rounded-lg" alt="Imagen 5" />
+      <img src="/src/images/patrocinadores/imd.jpg" class="h-30 object-cover rounded-lg" alt="Imagen 6" />
+      <img src="/src/images/patrocinadores/Globalcaja.jpg" class="h-30 object-cover rounded-lg" alt="Imagen 7" />
+      <img src="/src/images/patrocinadores/FECLM.jpg" class="h-30 object-cover rounded-lg" alt="Imagen 8" />
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="py-20 mx-auto min-h-screen bg-gradient-to-bl from-amber-600 to-blue-600  bg-amber-600 bg-cover bg-center bg-no-repeat">
+
+    
+  <div class="gap-4 max-w-5xl mx-auto rounded-4xl shadow-2xl border">
+     <div class="grid bg-white rounded-4xl overflow-hidden opacity-100 ">
+         <h1 class="text-3xl text-blue-600 text-center font-extrabold py-10 uppercase">Quieres apuntarte?</h1>
+         <form class="bg-white rounded px-8 pt-6 pb-8 mb-4 space-y-8">
+             <div class="mb-2">
+               <label class="block text-blue-600 text-2xl font-extrabold mb-2 opacity-100 uppercase" for="nombre">
+                 Nombre
+               </label>
+               <input class="shadow appearance-none border rounded w-full py-2 px-3 text-blue-600 leading-tight focus:outline-none focus:shadow-outline uppercase" id="username" type="text" placeholder="nombre">
+             </div>
+             <div class="mb-2">
+               <label class="block text-blue-600 text-2xl font-extrabold mb-2 uppercase" for="email">
+                 Email
+               </label>
+               <input class="shadow appearance-none border rounded w-full py-2 px-3 text-blue-600 mb-3 leading-tight focus:outline-none focus:shadow-outline uppercase" id="password" type="text" placeholder="Email">
+             </div>
+             <div class="mb-2">
+                 <label class="block text-blue-600 text-2xl font-extrabold mb-2 uppercase" for="email">
+                   Mensaje
+                 </label>
+                 <input class="shadow appearance-none border rounded w-130 h-20 py-2 px-3 text-blue-600 mb-3 mr-4 leading-tight focus:outline-none focus:shadow-outline uppercase" id="mensaje" type="text" placeholder="Mensaje">
+                 <button class="opacity-100 bg-blue-600 hover:bg-amber-600 text-white font-bold py-2 px-20 rounded focus:outline-none focus:shadow-outline" type="button">
+                     Enviar
+                   </button>
+             </div>
+
+         </form>
+     </div>
+     
+ </div> 
+</section>
