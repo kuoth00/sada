@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <header class="fixed top-0 left-0 w-full bg-white text-black shadow-2xl px-6 py-4 flex justify-between items-center z-50">
       <div class="logo">
-        <img src="/src/images/sada.png" alt="Logo" class="h-10" />
+        <img src="/images/sada.png" alt="Logo" class="h-10" />
       </div>
 
       <nav class="hidden md:flex space-x-6 text-blue-600 hover:blue-500 uppercase text-2xl font-bold">
